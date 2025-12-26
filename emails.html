@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Evidence - The Vanishing Curator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+Pro:wght@300;400;600&family=Courier+Prime&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --noir-black: #0a0a0a;
+            --noir-dark: #1a1a1a;
+            --noir-gray: #2a2a2a;
+            --blood-red: #8b0000;
+            --accent-gold: #d4af37;
+            --text-light: #e0e0e0;
+            --text-dim: #999;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            background: var(--noir-black);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .back-link {
+            display: inline-block;
+            color: var(--accent-gold);
+            text-decoration: none;
+            margin-bottom: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 2px solid var(--blood-red);
+            margin-bottom: 60px;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            font-weight: 900;
+            color: var(--accent-gold);
+            margin-bottom: 10px;
+        }
+        
+        .evidence-number {
+            color: var(--text-dim);
+            font-size: 0.9em;
+            letter-spacing: 2px;
+        }
+        
+        .email-container {
+            background: linear-gradient(135deg, var(--noir-dark), #151515);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-left: 4px solid var(--blood-red);
+            margin-bottom: 40px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .email-container:hover {
+            border-left-color: var(--accent-gold);
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+        }
+        
+        .email-header {
+            background: rgba(139, 0, 0, 0.2);
+            padding: 25px;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        
+        .email-title {
+            font-family: 'Courier Prime', monospace;
+            font-size: 0.85em;
+            color: var(--accent-gold);
+            font-weight: bold;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+        
+        .email-meta {
+            font-family: 'Courier Prime', monospace;
+            font-size: 0.9em;
+            margin-bottom: 8px;
+        }
+        
+        .email-label {
+            color: var(--text-dim);
+            min-width: 80px;
+            display: inline-block;
+        }
+        
+        .email-value {
+            color: var(--text-light);
+        }
+        
+        .email-subject {
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+        
+        .email-body {
+            padding: 30px;
+            font-size: 1.05em;
+            line-height: 1.8;
+        }
+        
+        .email-body p {
+            margin-bottom: 20px;
+        }
+        
+        .email-signature {
+            margin-top: 30px;
+            color: var(--text-dim);
+        }
+        
+        .separator {
+            height: 2px;
+            background: linear-gradient(to right, transparent, var(--blood-red), transparent);
+            margin: 60px 0;
+        }
+        
+        .analysis-note {
+            background: rgba(212, 175, 55, 0.1);
+            border: 2px dashed var(--accent-gold);
+            padding: 20px;
+            margin-top: 20px;
+            font-style: italic;
+            font-size: 0.95em;
+        }
+        
+        .analysis-note strong {
+            color: var(--accent-gold);
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Evidence List</a>
+        
+        <header>
+            <div class="evidence-number">EVIDENCE DOCUMENT #1</div>
+            <h1>Email Correspondences</h1>
+            <p style="color: var(--text-dim); margin-top: 10px;">Case #2024-HC-0847</p>
+        </header>
+        
+        <!-- Email 1 -->
+        <div class="email-container">
+            <div class="email-header">
+                <div class="email-title">EMAIL #1</div>
+                <div class="email-meta">
+                    <span class="email-label">From:</span>
+                    <span class="email-value">Dr. Victoria Sterling &lt;v.sterling@heritagecitymuseum.org&gt;</span>
+                </div>
+                <div class="email-meta">
+                    <span class="email-label">To:</span>
+                    <span class="email-value">Marcus Chen &lt;m.chen@heritagecitymuseum.org&gt;</span>
+                </div>
+                <div class="email-meta">
+                    <span class="email-label">Date:</span>
+                    <span class="email-value">December 15, 2024, 7:15 PM</span>
+                </div>
+                <div class="email-meta">
+                    <span class="email-label">Subject:</span>
+                    <span class="email-subject">Need you to stay late tonight - URGENT</span>
+                </div>
+            </div>
+            <div class="email-body">
+                <p>Marcus,</p>
+                <p>I need you to stay after hours tonight. Something important has come up regarding the Midnight Diamond exhibition. We need to discuss your role in the upcoming authentication process.</p>
+                <p>Please meet me in my office at 8:30 PM. Don't mention this to anyone else on staff.</p>
+                <div class="email-signature">Victoria</div>
+            </div>
+        </div>
+        
+        <!-- Email 2 -->
+        <div class="email-container">
+            <div class="email-header">
+                <div class="email-title">EMAIL #2</div>
+                <div class="email-meta">
+                    <span class="email-label">From:</span>
+                    <span class="email-value">Marcus Chen &lt;m.chen@heritagecitymuseum.org&gt;</span>
+                </div>
+                <div class="email-meta">
+                    <span class="email-label">To:</span>
+                    <span class="email-value">Dr. Victoria Sterling &lt;v.sterling@heritagecitymuseum.org&gt;</span>
+                </div>
+                <div class="email-meta">
+                    <span class="email-label">Date:</span>
+                    <span class="email-value">December 15, 2024, 7:22 PM</span>
+                </div>
+                <div class="email-meta">
+                    <span class="email-label">Subject:</span>
+                    <span class="email-subject">RE: Need you to stay late tonight - URGENT</span>
+                </div>
+            </div>
+            <div class="email-body">
+                <p>Dr. Sterling,</p>
+                <p>Of course. I'll be there at 8:30. Is this about the authentication concerns I raised last week? I still believe we should have the diamond re-evaluated before the exhibition opens.</p>
+                <div class="email-signature">Marcus</div>
+            </div>
+        </div>
+        
+        <div class="separator"></div>
+        
+        <!-- Email 3 -->
+        <div class="email-container">
+            <div class="email-header">
+                <div class="email-title">EMAIL #3</div>
+                <div class="email-meta">
+                    <span class="email-label">From:</span>
+                    <span class="email-value">James Wellington &lt;james.w@wellingtonart.com&gt;</span>
+                </div>
+                <div class="email-meta">
+                    <span class="email-label">To:</span>
+                    <span class="email-value">Dr. Victoria Sterling &lt;v.sterling@heritagecitymuseum.org&gt;</span>
+                </div>
+                <div class="email-meta">
+                    <span class="email-label">Date:</span>
+                    <span class="email-value">December 14, 2024, 3:45 PM</span>
+                </div>
+                <div class="email-meta">
+                    <span class="email-label">Subject:</span>
+                    <span class="email-subject">Final Offer - Midnight Diamond</span>
+                </div>
+            </div>
+            <div class="email-body">
+                <p>Victoria,</p>
+                <p>I'm making one last offer for the Midnight Diamond: <strong style="color: var(--accent-gold);">$15 million, cash, immediate transfer</strong>. This is 25% above market value. My client is extremely motivated.</p>
+                <p>I know the museum's board has been difficult, but this sale could solve all your funding issues for years. Think about what you could accomplish with that capital.</p>
+                <p>I'll be in town tomorrow evening. Perhaps we could discuss this privately? Away from the board's watchful eyes?</p>
+                <div class="email-signature">James Wellington</div>
+            </div>
+        </div>
+        
+        <!-- Email 4 -->
+        <div class="email-container">
+            <div class="email-header">
+                <div class="email-title">EMAIL #4</div>
+                <div class="email-meta">
+                    <span class="email-label">From:</span>
+                    <span class="email-value">Dr. Victoria Sterling &lt;v.sterling@heritagecitymuseum.org&gt;</span>
+                </div>
+                <div class="email-meta">
+                    <span class="email-label">To:</span>
+                    <span class="email-value">James Wellington &lt;james.w@wellingtonart.com&gt;</span>
+                </div>
+                <div class="email-meta">
+                    <span class="email-label">Date:</span>
+                    <span class="email-value">December 14, 2024, 4:12 PM</span>
+                </div>
+                <div class="email-meta">
+                    <span class="email-label">Subject:</span>
+                    <span class="email-subject">RE: Final Offer - Midnight Diamond</span>
+                </div>
+            </div>
+            <div class="email-body">
+                <p>James,</p>
+                <p>As I've told you before, the diamond is not for sale. It's a cornerstone of our collection and has tremendous historical significance beyond its monetary value.</p>
+                <p>Please stop making these offers. They put me in an uncomfortable position with the board.</p>
+                <div class="email-signature">Victoria</div>
+            </div>
+        </div>
+        
+        <div class="separator"></div>
+        
+        <!-- Email 5 -->
+        <div class="email-container">
+            <div class="email-header">
+                <div class="email-title">EMAIL #5</div>
+                <div class="email-meta">
+                    <span class="email-label">From:</span>
+                    <span class="email-value">Elena Rodriguez &lt;e.rodriguez@heritagecitymuseum.org&gt;</span>
+                </div>
+                <div class="email-meta">
+                    <span class="email-label">To:</span>
+                    <span class="email-value">Dr. Victoria Sterling &lt;v.sterling@heritagecitymuseum.org&gt;</span>
+                </div>
+                <div class="email-meta">
+                    <span class="email-label">Date:</span>
+                    <span class="email-value">December 10, 2024, 9:23 AM</span>
+                </div>
+                <div class="email-meta">
+                    <span class="email-label">Subject:</span>
+                    <span class="email-subject">Personal Request - Salary Advance</span>
+                </div>
+            </div>
+            <div class="email-body">
+                <p>Dr. Sterling,</p>
+                <p>I hate to ask this, but I'm in a difficult situation financially. My divorce has left me with some unexpected debts, and I'm struggling to keep up with payments.</p>
+                <p>Is there any way I could request a salary advance of $5,000? I've been with the museum for 15 years and have never asked for anything like this before. I'm desperate.</p>
+                <p>I promise this won't affect my work performance.</p>
+                <div class="email-signature">Elena</div>
+            </div>
+        </div>
+        
+        <!-- Email 6 -->
+        <div class="email-container">
+            <div class="email-header">
+                <div class="email-title">EMAIL #6</div>
+                <div class="email-meta">
+                    <span class="email-label">From:</span>
+                    <span class="email-value">Dr. Catherine Moore &lt;c.moore@hcmuseum-board.org&gt;</span>
+                </div>
+                <div class="email-meta">
+                    <span class="email-label">To:</span>
+                    <span class="email-value">Board Members (BCC)</span>
+                </div>
+                <div class="email-meta">
+                    <span class="email-label">Date:</span>
+                    <span class="email-value">December 12, 2024, 2:15 PM</span>
+                </div>
+                <div class="email-meta">
+                    <span class="email-label">Subject:</span>
+                    <span class="email-subject">Concerns About Current Leadership</span>
+                </div>
+            </div>
+            <div class="email-body">
+                <p>Dear Board Members,</p>
+                <p>I must raise serious concerns about Dr. Sterling's recent decisions. Her refusal to consider lucrative offers for certain pieces, combined with questionable acquisition choices, is affecting our financial stability.</p>
+                <p>Furthermore, I've heard rumors about her personal financial troubles. We should investigate whether she's fit to continue in her role, especially given her access to our most valuable pieces.</p>
+                <p>I propose we schedule an emergency board meeting to discuss interim leadership options.</p>
+                <div class="email-signature">
+                    <p>Regards,</p>
+                    <p>Dr. Catherine Moore</p>
+                </div>
+            </div>
+            <div class="analysis-note">
+                <strong>Investigator's Note:</strong> This email, sent three days before the incident, shows Dr. Moore was actively working to undermine Dr. Sterling's position and position herself as a potential replacement.
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin: 60px 0 40px;">
+            <a href="../index.html" class="back-link" style="display: inline-block; padding: 15px 40px; border: 2px solid var(--accent-gold);">
+                ← Return to Evidence List
+            </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Access Logs - The Vanishing Curator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+Pro:wght@300;400;600&family=Courier+Prime&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --noir-black: #0a0a0a;
+            --noir-dark: #1a1a1a;
+            --blood-red: #8b0000;
+            --accent-gold: #d4af37;
+            --text-light: #e0e0e0;
+            --text-dim: #999;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            background: var(--noir-black);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        
+        .back-link {
+            display: inline-block; color: var(--accent-gold); text-decoration: none;
+            margin-bottom: 30px; font-weight: 600; transition: all 0.3s ease;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+        
+        header {
+            text-align: center; padding: 40px 20px;
+            border-bottom: 2px solid var(--blood-red); margin-bottom: 60px;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            font-weight: 900; color: var(--accent-gold);
+        }
+        
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2em; color: var(--accent-gold);
+            margin: 40px 0 25px; padding-bottom: 10px;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        
+        .table-container {
+            background: var(--noir-dark);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            overflow-x: auto; margin-bottom: 30px;
+        }
+        
+        table { width: 100%; border-collapse: collapse; font-family: 'Courier Prime', monospace; }
+        
+        th {
+            background: rgba(139, 0, 0, 0.3);
+            color: var(--accent-gold);
+            padding: 15px; text-align: left;
+            font-weight: 600; border-bottom: 2px solid var(--blood-red);
+        }
+        
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-light);
+        }
+        
+        tr:hover { background: rgba(212, 175, 55, 0.05); }
+        
+        .critical-row {
+            background: rgba(139, 0, 0, 0.2) !important;
+            border-left: 4px solid var(--blood-red);
+        }
+        
+        .critical-row td { color: #ff6666; font-weight: 600; }
+        
+        .note-box {
+            background: rgba(212, 175, 55, 0.1);
+            border: 2px dashed var(--accent-gold);
+            padding: 20px; margin: 30px 0;
+            font-style: italic;
+        }
+        
+        .note-box strong { color: var(--accent-gold); font-style: normal; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Evidence List</a>
+        
+        <header>
+            <div style="color: var(--text-dim); font-size: 0.9em; letter-spacing: 2px; margin-bottom: 10px;">EVIDENCE DOCUMENT #3</div>
+            <h1>Security Access Logs</h1>
+            <p style="color: var(--text-dim); margin-top: 10px;">Case #2024-HC-0847</p>
+        </header>
+        
+        <h2>Keycard Access Log - December 15, 2024</h2>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Cardholder</th>
+                        <th>Location</th>
+                        <th>Access Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7:45 PM</td>
+                        <td>E. Rodriguez</td>
+                        <td>Main Entrance</td>
+                        <td>GRANTED</td>
+                    </tr>
+                    <tr>
+                        <td>8:15 PM</td>
+                        <td>Dr. C. Moore</td>
+                        <td>Admin Wing Door 2</td>
+                        <td>GRANTED</td>
+                    </tr>
+                    <tr>
+                        <td>8:47 PM</td>
+                        <td>Dr. V. Sterling</td>
+                        <td>Director's Office</td>
+                        <td>GRANTED</td>
+                    </tr>
+                    <tr>
+                        <td>9:15 PM</td>
+                        <td>Dr. V. Sterling</td>
+                        <td>Gallery Wing 3 - Main</td>
+                        <td>GRANTED</td>
+                    </tr>
+                    <tr>
+                        <td>9:32 PM</td>
+                        <td>M. Chen</td>
+                        <td>Main Entrance</td>
+                        <td>EXIT</td>
+                    </tr>
+                    <tr>
+                        <td>10:42 PM</td>
+                        <td>M. Chen</td>
+                        <td>Main Entrance</td>
+                        <td>GRANTED</td>
+                    </tr>
+                    <tr>
+                        <td>10:58 PM</td>
+                        <td>M. Chen</td>
+                        <td>Main Entrance</td>
+                        <td>EXIT</td>
+                    </tr>
+                    <tr class="critical-row">
+                        <td>11:08 PM</td>
+                        <td>Dr. C. Moore</td>
+                        <td>Gallery Wing 3 - Main</td>
+                        <td>GRANTED</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="note-box">
+            <strong>CRITICAL FINDING:</strong> Entry at 11:08 PM occurred 15 minutes before alarm trigger at 11:23 PM. This timing is crucial to understanding the sequence of events.
+        </div>
+        
+        <h2>Parking Lot Camera Log - December 15, 2024</h2>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Vehicle/Plate</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>9:32 PM</td>
+                        <td>Honda Civic - MCH 847</td>
+                        <td>M. Chen vehicle departs</td>
+                    </tr>
+                    <tr>
+                        <td>10:42 PM</td>
+                        <td>Honda Civic - MCH 847</td>
+                        <td>M. Chen vehicle returns</td>
+                    </tr>
+                    <tr>
+                        <td>10:45 PM</td>
+                        <td>Bentley - JW 2024</td>
+                        <td>J. Wellington vehicle departs</td>
+                    </tr>
+                    <tr>
+                        <td>10:58 PM</td>
+                        <td>Honda Civic - MCH 847</td>
+                        <td>M. Chen vehicle departs (final)</td>
+                    </tr>
+                    <tr class="critical-row">
+                        <td>11:35 PM</td>
+                        <td>Mercedes - CM 5800</td>
+                        <td>Dr. C. Moore vehicle departs (12 min after alarm)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="note-box">
+            <strong>INVESTIGATOR'S NOTE:</strong> Dr. Moore's vehicle departure timing places her at the scene during the critical window when the diamond was taken. The 12-minute gap between the alarm (11:23 PM) and her departure (11:35 PM) is highly suspicious.
+        </div>
+        
+        <div style="text-align: center; margin: 60px 0 40px;">
+            <a href="../index.html" class="back-link" style="display: inline-block; padding: 15px 40px; border: 2px solid var(--accent-gold);">
+                ← Return to Evidence List
+            </a>
+        </div>
+    </div>
+</body>
+</html>

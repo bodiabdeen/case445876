@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Witness Statements - The Vanishing Curator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+Pro:wght@300;400;600&family=Courier+Prime&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --noir-black: #0a0a0a;
+            --noir-dark: #1a1a1a;
+            --blood-red: #8b0000;
+            --accent-gold: #d4af37;
+            --text-light: #e0e0e0;
+            --text-dim: #999;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            background: var(--noir-black);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .back-link {
+            display: inline-block;
+            color: var(--accent-gold);
+            text-decoration: none;
+            margin-bottom: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 2px solid var(--blood-red);
+            margin-bottom: 60px;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            font-weight: 900;
+            color: var(--accent-gold);
+        }
+        
+        .statement-container {
+            background: linear-gradient(135deg, var(--noir-dark), #151515);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-left: 4px solid var(--blood-red);
+            margin-bottom: 50px;
+            padding: 35px;
+        }
+        
+        .statement-header {
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+        
+        .statement-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8em;
+            color: var(--accent-gold);
+            margin-bottom: 10px;
+        }
+        
+        .statement-meta {
+            font-family: 'Courier Prime', monospace;
+            font-size: 0.9em;
+            color: var(--text-dim);
+        }
+        
+        .qa-block {
+            margin-bottom: 25px;
+        }
+        
+        .question {
+            color: var(--accent-gold);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .answer {
+            color: var(--text-light);
+            line-height: 1.8;
+            padding-left: 20px;
+            border-left: 2px solid rgba(139, 0, 0, 0.3);
+        }
+        
+        .separator {
+            height: 2px;
+            background: linear-gradient(to right, transparent, var(--blood-red), transparent);
+            margin: 60px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Evidence List</a>
+        
+        <header>
+            <div style="color: var(--text-dim); font-size: 0.9em; letter-spacing: 2px; margin-bottom: 10px;">EVIDENCE DOCUMENT #2</div>
+            <h1>Witness Statements</h1>
+            <p style="color: var(--text-dim); margin-top: 10px;">Case #2024-HC-0847</p>
+        </header>
+        
+        <div class="statement-container">
+            <div class="statement-header">
+                <div class="statement-title">Statement #1: Marcus Chen</div>
+                <div class="statement-meta">
+                    Position: Assistant Curator<br>
+                    Date: December 16, 2024, 9:30 AM<br>
+                    Interviewed by: Detective Sarah Morrison
+                </div>
+            </div>
+            
+            <div class="qa-block">
+                <div class="question">Q: What time did you arrive at the museum on December 15th?</div>
+                <div class="answer">A: I came in around 9:00 AM as usual. It was a normal workday until Dr. Sterling called me into her office around 3 PM.</div>
+            </div>
+            
+            <div class="qa-block">
+                <div class="question">Q: What did she want to discuss?</div>
+                <div class="answer">A: She seemed upset. She accused me of questioning her authentication of the Midnight Diamond. I had mentioned to a colleague that I thought we should get a second opinion, but it was just professional caution. She took it as an attack on her expertise.</div>
+            </div>
+            
+            <div class="qa-block">
+                <div class="question">Q: Then what happened?</div>
+                <div class="answer">A: She asked me to stay late. Said we needed to talk more about it. I got an email at 7:15 PM confirming the meeting at 8:30. When I went to her office at 8:30, her door was closed and locked. I knocked several times but got no answer. I assumed she changed her mind and went home.</div>
+            </div>
+            
+            <div class="qa-block">
+                <div class="question">Q: What time did you leave the museum?</div>
+                <div class="answer">A: I stayed in my office working on exhibition catalogs until about 9:30 PM, then I left. Look, I know the parking records show my car leaving later, but I can explain that. I forgot my phone in my office and had to come back around 10:45 PM. I was only inside for about 15 minutes.</div>
+            </div>
+            
+            <div class="qa-block">
+                <div class="question">Q: Did you see anyone else during your second visit?</div>
+                <div class="answer">A: No, the place was quiet. I thought I heard voices from the direction of Gallery Wing 3, but the building echoes a lot at night. Could have been the security guard's radio.</div>
+            </div>
+            
+            <div class="qa-block">
+                <div class="question">Q: Do you have any reason to believe Dr. Sterling was planning to steal the diamond?</div>
+                <div class="answer">A: No! She loved that museum. But... she had been stressed lately. Money troubles, I think. And she kept getting these calls that would make her upset. I don't want to speak ill of her, but something was definitely wrong.</div>
+            </div>
+        </div>
+        
+        <div class="separator"></div>
+        
+        <div class="statement-container">
+            <div class="statement-header">
+                <div class="statement-title">Statement #2: Elena Rodriguez</div>
+                <div class="statement-meta">
+                    Position: Night Security Guard<br>
+                    Date: December 16, 2024, 2:15 PM<br>
+                    Interviewed by: Detective Sarah Morrison
+                </div>
+            </div>
+            
+            <div class="qa-block">
+                <div class="question">Q: Walk me through your shift on December 15th.</div>
+                <div class="answer">A: I started at 7:45 PM. Standard procedure—I check all the doors, make sure the alarm system is armed properly, then do rounds every hour. Everything was normal that night.</div>
+            </div>
+            
+            <div class="qa-block">
+                <div class="question">Q: Did you see Dr. Sterling?</div>
+                <div class="answer">A: On the cameras, yes. I saw her enter her office around 8:47 PM. She looked agitated, kept looking over her shoulder. I made a note of it in my log because it seemed unusual.</div>
+            </div>
+            
+            <div class="qa-block">
+                <div class="question">Q: What about other staff members?</div>
+                <div class="answer">A: I saw Marcus Chen leave around 9:30, then that art dealer Wellington left around 10:45. I didn't know Wellington was in the building—there was no visitor sign-in. That worried me, so I did an extra round of Gallery Wing 3 at 11:00 PM.</div>
+            </div>
+            
+            <div class="qa-block">
+                <div class="question">Q: And what did you find?</div>
+                <div class="answer">A: The Midnight Diamond display case was closed and locked, everything looked fine. But when the alarm went off at 11:23, I ran back and the diamond was gone. The case was wide open.</div>
+            </div>
+            
+            <div class="qa-block">
+                <div class="question">Q: How is that possible if you just checked it 23 minutes earlier?</div>
+                <div class="answer">A: I don't know! Only Dr. Sterling and I had keys to that case. My key was on me the whole time. She must have come back after I did my round.</div>
+            </div>
+            
+            <div class="qa-block">
+                <div class="question">Q: We need to ask about your financial situation.</div>
+                <div class="answer">A: I know how it looks. Yes, I have debts. Yes, I asked Dr. Sterling for help. But I would never steal from this museum. It's been my life for 15 years. I'm telling you, check the cameras again. Someone else was there after my 11:00 round.</div>
+            </div>
+        </div>
+        
+        <div class="separator"></div>
+        
+        <div class="statement-container">
+            <div class="statement-header">
+                <div class="statement-title">Statement #3: James Wellington</div>
+                <div class="statement-meta">
+                    Position: Private Art Dealer<br>
+                    Date: December 17, 2024, 10:00 AM<br>
+                    Interviewed by: Detective Sarah Morrison
+                </div>
+            </div>
+            
+            <div class="qa-block">
+                <div class="question">Q: Why were you at the museum on December 15th?</div>
+                <div class="answer">A: I had a 7:00 PM appointment with Dr. Sterling. We were discussing a potential acquisition for the museum—a 17th-century Persian manuscript. It's what I do for a living, Detective.</div>
+            </div>
+            
+            <div class="qa-block">
+                <div class="question">Q: But you've made multiple offers to buy the Midnight Diamond.</div>
+                <div class="answer">A: On behalf of a client, yes. That's different from theft. My client is a legitimate collector who's willing to pay far above market value. Dr. Sterling refused every offer, which is her right.</div>
+            </div>
+            
+            <div class="qa-block">
+                <div class="question">Q: What time did your meeting end?</div>
+                <div class="answer">A: Around 8:30 PM. The meeting was brief—she wasn't interested in the manuscript. She seemed distracted, kept checking her phone. When I mentioned the diamond one more time, she got angry and asked me to leave.</div>
+            </div>
+            
+            <div class="qa-block">
+                <div class="question">Q: Why didn't you sign out at the visitor log?</div>
+                <div class="answer">A: Dr. Sterling met me at a side entrance. Said it would be more convenient. I thought it was odd, but I didn't question it.</div>
+            </div>
+            
+            <div class="qa-block">
+                <div class="question">Q: Security cameras show your car leaving at 10:45 PM. Where were you for those two hours?</div>
+                <div class="answer">A: I was at a nearby coffee shop working on my laptop. I have a receipt. After our unpleasant meeting, I needed to clear my head before the drive home.</div>
+            </div>
+            
+            <div class="qa-block">
+                <div class="question">Q: Did you see anything unusual before you left?</div>
+                <div class="answer">A: Actually, yes. When I was walking to my car around 8:40 PM, I saw someone—a woman—walking quickly toward the back of the museum. She was wearing a hood, so I couldn't see her face clearly. At the time, I assumed it was another staff member.</div>
+            </div>
+        </div>
+        
+        <div class="separator"></div>
+        
+        <div class="statement-container">
+            <div class="statement-header">
+                <div class="statement-title">Statement #4: Robert Hayes</div>
+                <div class="statement-meta">
+                    Position: Evening Janitor<br>
+                    Date: December 16, 2024, 4:00 PM<br>
+                    Interviewed by: Detective Sarah Morrison
+                </div>
+            </div>
+            
+            <div class="qa-block">
+                <div class="question">Q: What were you doing on December 15th?</div>
+                <div class="answer">A: Normal evening shift. I clean the administrative offices and public areas after the museum closes. Start at 6:30, usually done by 10:00 PM.</div>
+            </div>
+            
+            <div class="qa-block">
+                <div class="question">Q: You reported hearing raised voices. Tell me about that.</div>
+                <div class="answer">A: Yeah, around 8:30 PM. I was cleaning the hallway outside Dr. Sterling's office. I heard her arguing with someone—sounded like a man. They were shouting about "the plan" and "too risky." I couldn't make out everything, but Dr. Sterling said something like "I won't be a part of this anymore."</div>
+            </div>
+            
+            <div class="qa-block">
+                <div class="question">Q: Did you see who was with her?</div>
+                <div class="answer">A: No, her door was closed. But about five minutes later, a man came out—that art dealer, Wellington. He looked angry, face all red. He practically ran past me without saying a word.</div>
+            </div>
+            
+            <div class="qa-block">
+                <div class="question">Q: What did Dr. Sterling do after that?</div>
+                <div class="answer">A: She came out maybe 15 minutes later, around 8:47. She looked upset, like she'd been crying. She went toward the gallery wing. I finished my work and left around 9:15 PM.</div>
+            </div>
+            
+            <div class="qa-block">
+                <div class="question">Q: Did you see anyone else that evening?</div>
+                <div class="answer">A: Marcus Chen was still in his office when I left. And I saw that board member, Dr. Moore, leaving through the back exit around 8:00 PM. Thought that was strange since board members usually use the front entrance.</div>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin: 60px 0 40px;">
+            <a href="../index.html" class="back-link" style="display: inline-block; padding: 15px 40px; border: 2px solid var(--accent-gold);">
+                ← Return to Evidence List
+            </a>
+        </div>
+    </div>
+</body>
+</html>

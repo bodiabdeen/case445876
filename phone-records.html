@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Records - The Vanishing Curator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+Pro:wght@300;400;600&family=Courier+Prime&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --noir-black: #0a0a0a;
+            --noir-dark: #1a1a1a;
+            --blood-red: #8b0000;
+            --accent-gold: #d4af37;
+            --text-light: #e0e0e0;
+            --text-dim: #999;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            background: var(--noir-black);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        
+        .back-link {
+            display: inline-block; color: var(--accent-gold); text-decoration: none;
+            margin-bottom: 30px; font-weight: 600; transition: all 0.3s ease;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+        
+        header {
+            text-align: center; padding: 40px 20px;
+            border-bottom: 2px solid var(--blood-red); margin-bottom: 60px;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            font-weight: 900; color: var(--accent-gold);
+        }
+        
+        .table-container {
+            background: var(--noir-dark);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            overflow-x: auto; margin-bottom: 30px;
+        }
+        
+        table { width: 100%; border-collapse: collapse; font-family: 'Courier Prime', monospace; }
+        
+        th {
+            background: rgba(139, 0, 0, 0.3);
+            color: var(--accent-gold);
+            padding: 15px; text-align: left;
+            font-weight: 600; border-bottom: 2px solid var(--blood-red);
+        }
+        
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-light);
+        }
+        
+        tr:hover { background: rgba(212, 175, 55, 0.05); }
+        
+        .critical-row {
+            background: rgba(139, 0, 0, 0.2) !important;
+            border-left: 4px solid var(--blood-red);
+        }
+        
+        .critical-row td { color: #ff6666; font-weight: 600; }
+        
+        .note-box {
+            background: rgba(212, 175, 55, 0.1);
+            border: 2px dashed var(--accent-gold);
+            padding: 25px; margin: 30px 0;
+            font-style: italic;
+        }
+        
+        .note-box strong { color: var(--accent-gold); font-style: normal; }
+        
+        .alert-box {
+            background: rgba(139, 0, 0, 0.3);
+            border: 3px solid var(--blood-red);
+            padding: 25px; margin: 40px 0;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Evidence List</a>
+        
+        <header>
+            <div style="color: var(--text-dim); font-size: 0.9em; letter-spacing: 2px; margin-bottom: 10px;">EVIDENCE DOCUMENT #4</div>
+            <h1>Phone Records</h1>
+            <p style="color: var(--text-dim); margin-top: 10px;">December 15, 2024 - Key Calls</p>
+        </header>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>3:52 PM</td>
+                        <td>J. Wellington</td>
+                        <td>Dr. V. Sterling</td>
+                        <td>8 minutes</td>
+                    </tr>
+                    <tr>
+                        <td>6:15 PM</td>
+                        <td>Unknown (555-0182)</td>
+                        <td>Dr. V. Sterling</td>
+                        <td>3 minutes</td>
+                    </tr>
+                    <tr>
+                        <td>8:12 PM</td>
+                        <td>Dr. C. Moore</td>
+                        <td>Unknown (555-0182)</td>
+                        <td>12 minutes</td>
+                    </tr>
+                    <tr>
+                        <td>8:35 PM</td>
+                        <td>Dr. V. Sterling</td>
+                        <td>J. Wellington</td>
+                        <td>Not answered</td>
+                    </tr>
+                    <tr class="critical-row">
+                        <td>10:52 PM</td>
+                        <td>Unknown (555-0182)</td>
+                        <td>Dr. C. Moore</td>
+                        <td>4 minutes</td>
+                    </tr>
+                    <tr>
+                        <td>11:28 PM</td>
+                        <td>Dr. C. Moore</td>
+                        <td>911 Emergency</td>
+                        <td>7 minutes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="alert-box">
+            <strong>⚠ CRITICAL DISCOVERY ⚠</strong><br><br>
+            The unknown number <strong style="color: var(--accent-gold);">(555-0182)</strong> appears multiple times in the call records. 
+            Investigation revealed this is a burner phone purchased with cash on December 10, 2024.<br><br>
+            <strong>Purchase Location:</strong> Convenience store near Dr. Catherine Moore's residence.<br>
+            <strong>Implications:</strong> This suggests premeditation and coordination between Dr. Moore and an unknown accomplice.
+        </div>
+        
+        <div class="note-box">
+            <strong>Timeline Analysis:</strong><br><br>
+            
+            <strong>6:15 PM:</strong> Burner phone calls Dr. Sterling (likely a threat or coordination call)<br><br>
+            
+            <strong>8:12 PM:</strong> Dr. Moore calls the burner phone for 12 minutes (planning the operation)<br><br>
+            
+            <strong>8:35 PM:</strong> Dr. Sterling attempts to call Wellington but gets no answer (possibly seeking help?)<br><br>
+            
+            <strong>10:52 PM:</strong> Burner phone calls Dr. Moore for 4 minutes—just 16 minutes before Dr. Moore's keycard access to Gallery Wing 3 at 11:08 PM. This was likely the accomplice giving the "all clear" signal.<br><br>
+            
+            <strong>11:28 PM:</strong> Dr. Moore calls 911 to report the crime—5 minutes after the alarm triggered at 11:23 PM. She was still at the scene.
+        </div>
+        
+        <div style="text-align: center; margin: 60px 0 40px;">
+            <a href="../index.html" class="back-link" style="display: inline-block; padding: 15px 40px; border: 2px solid var(--accent-gold);">
+                ← Return to Evidence List
+            </a>
+        </div>
+    </div>
+</body>
+</html>
